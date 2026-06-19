@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link href="main.css" rel="stylesheet" media="screen">
+		
+		<link href="https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">        
+		
+		<title>Brandon W</title>
+	</head>
+	
+	<body>
+        <div class="floating-container">
+            <header>
+                <h1>Brandon Wilks</h1>
+                <h5>Aspiring Game Dev</h5>
+            </header>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href=#>⇨ Works</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="day-night-btn" onclick="toggleMode()"></button>
+            <script>
+                function toggleMode() {
+                    document.querySelector('.floating-container').classList.toggle('light-mode');
+                    document.querySelector('.day-night-btn').classList.toggle('light-mode');
+                }
+            </script>
+            
+            <ul class="gameList">
+                <li><a href="works.html">Sector Z</a></li>
+                <li><a href="worksAlt.html">Asteroid Belt</a></li>
+            </ul>
+            <div class="game-container">
+                <iframe frameborder="0" src="https://itch.io/embed-upload/13071540?color=333333" allowfullscreen="" width="980" height="640"><a href="https://frostpyr0.itch.io/sector-z">Play Sector Z on itch.io</a></iframe>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; Copyright 2026. Contact <a href="mailto:brandonmwilks@gmail.com">me</a></p>
+        </footer>
+	</body>
+</html>

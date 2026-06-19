@@ -1,0 +1,298 @@
+.tomorrow-thin {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .tomorrow-extralight {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .tomorrow-light {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .tomorrow-regular {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .tomorrow-medium {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .tomorrow-semibold {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .tomorrow-bold {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .tomorrow-extrabold {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .tomorrow-black {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .tomorrow-thin-italic {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .tomorrow-extralight-italic {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .tomorrow-light-italic {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .tomorrow-regular-italic {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .tomorrow-medium-italic {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .tomorrow-semibold-italic {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .tomorrow-bold-italic {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .tomorrow-extrabold-italic {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .tomorrow-black-italic {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+
+body {
+    font-family: 'Tomorrow', sans-serif;
+    font-weight: 400;
+    background-color: black;
+}
+
+.floating-container {
+    display: flex;
+    flex-direction: column;
+    height: 96vh;
+    padding: 1%;
+    box-sizing: border-box;
+    background-image: url('images/nightsky.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid white;
+    margin: 0 auto;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+.floating-container.light-mode {
+  background-image: url('images/MornSkyClipped.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: black;
+  text-shadow: 2px 2px 5px white;
+}
+
+.day-night-btn{
+  position: fixed;
+  right: 2.5%;
+  top: 2%;
+  width: 3%;
+  height: auto;
+  aspect-ratio: 2;
+  background-image: url('images/daytoggle.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.day-night-btn.light-mode {
+  background-image: url('images/nighttoggle.png');
+}
+
+.float-right{
+    font-size: clamp(10px, 2vw, 20px);
+    position: fixed;
+    right: 5%;
+    bottom: 10%;
+}
+
+
+.about-float{
+    padding-top:5%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 10%;
+}
+
+.float-item{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.resized-img {
+    width: 50%;
+    height: auto;
+}
+
+ul{
+    font-size: clamp(10px, 2vw, 20px);
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    justify-content: space-evenly;
+    align-items: left;
+}
+.gameList{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+header h1 {
+    font-size: clamp(25px, 5vw, 50px);
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+header h5 {
+    font-size: clamp(5px, 1vw, 10px);
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    padding-left: 2vh;
+}
+
+h1 {
+    font-size: clamp(15px, 3vw, 30px);
+    font-weight: 400;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: transparent;
+}
+
+iframe {
+  width: 800px;
+  height: 600px;
+  border: none;
+}
+
+footer{
+    font-size: clamp(4px, 1vw, 8px);
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+@media (max-width: 425px) {
+
+  .floating-container {
+    display: flex;
+    flex-direction: column;
+    height: 96vh;
+    padding: 1%;
+    box-sizing: border-box;
+    margin: 0px;
+    margin-bottom: 2vh;
+  }
+  .about-float{
+    padding-top:5%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 10%;
+    align-items: left;
+  }
+
+  .float-item{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    text-align: left;
+  }
+
+}
+@media (max-width: 768px) {
+
+  .about-float{
+    flex-wrap: wrap;
+    row-gap: 10px;
+    padding: 0;
+  }
+  .float-item{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    text-align: left;
+  }
+}
