@@ -172,9 +172,18 @@ body {
     flex-direction: row;
     padding-left: 10%;
 }
+.resume-float{
+    padding-top:5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-self: center;
+    gap: 10%;
+    width: 95%;
+}
 
 .float-item{
-    display: flex;
+    display: block;
     flex-direction: column;
     text-align: left;
 }
@@ -182,6 +191,9 @@ body {
 .resized-img {
     width: 50%;
     height: auto;
+}
+.tiny-img {
+    width: 20%;
 }
 
 ul{
@@ -192,7 +204,7 @@ ul{
     padding: 0;
     margin: 0;
     margin-top: 5vh;
-    margin-bottom: 5vh;
+    margin-bottom: 1vh;
     justify-content: space-evenly;
     align-items: left;
 }
@@ -229,6 +241,11 @@ h1 {
     font-size: clamp(15px, 3vw, 30px);
     font-weight: 400;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+h3 {
+  font-style: bold;
+  padding:0;
 }
 
 .game-container {

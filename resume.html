@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="main.css" rel="stylesheet" media="screen">
+		
+		<link href="https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">        
+		
+		<title>Brandon W</title>
+	</head>
+	
+	<body>
+        <div class="floating-container">
+            <header>
+                <h1>Brandon Wilks</h1>
+                <h5>Aspiring Game Dev</h5>
+            </header>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="works.html">Works</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href=#>⇨ Work Experience</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <main></main>
+
+            <button class="day-night-btn" onclick="toggleMode()"></button>
+            <script>
+                function toggleMode() {
+                    document.querySelector('.floating-container').classList.toggle('light-mode');
+                    document.querySelector('.day-night-btn').classList.toggle('light-mode');
+                }
+            </script>
+            
+            <div class="resume-float">
+                <div class="pair-items" style="display: flex; justify-content: space-between;">
+                    <img src="images/super.png" alt="Superstore" class="tiny-img">
+                    <div class="float-item">
+                        <h3>Customer Service/Meat Clerk, The Real Canadian Superstore</h3>
+                        <p style="display: flex; justify-content: space-between;">
+                            <span>London, ON</span>
+                            <span>2014 - Present</span>
+                        </p>
+                        • Received incoming orders, assured quality and stocked them accordingly<br>
+                        • Organized and rotated stock to guarantee freshness and visual appeal of product<br>
+                        • Addressed customer inquiries and concerns in a timely fashion<br>
+                        • Cleaned the store while following all safety policies and procedures<br>
+                    </div>
+                </div>
+                <div class="pair-items" style="display: flex; justify-content: space-between;">
+                    <img src="images/tims.png" alt="Tims" class="tiny-img">
+                    <div class="float-item">
+                        <h3>Food prep, Compass Group - On the Go Featuring Tim Hortons</h3>
+                        <p style="display: flex; justify-content: space-between;">
+                            <span>Woodstock, ON</span>
+                            <span>2011 – 2014</span>
+                        </p>
+                        • Positioned in Woodstock General Hospital<br>
+                        • Prepared, packaged and served food for staff, patients and visitors<br>
+                        • Catered events within the hospital while collaborating with co-workers<br>
+                        • Processed cash, debit and credit card transactions quickly and accurately<br>
+                        • Received incoming items, assured quality and stocked them accordingly<br>
+                    </div>
+                </div>
+                <div class="pair-items" style="display: flex; justify-content: space-between;">
+                    <img src="images/basics.png" alt="Food Basics" class="tiny-img">
+                    <div class="float-item">
+                        <h3>Customer Service, Food Basics</h3>
+                        <p style="display: flex; justify-content: space-between;">
+                            <span>Woodstock, ON</span>
+                            <span>2007 – 2011</span>
+                        </p>
+                        • Organized and rotated stock to guarantee freshness and visual appeal of product<br>
+                        • Addressed customer inquiries and concerns in a timely fashion<br>
+                        • Cleaned the store while following all safety policies and procedures<br>
+                    </div>
+                </div>
+                <div class="pair-items" style="display: flex; justify-content: space-between;">
+                    <img src="images/wendy.png" alt="Wendy's" class="tiny-img">
+                    <div class="float-item">
+                        <h3>Customer Service, Wendy’s</h3>
+                        <p style="display: flex; justify-content: space-between;">
+                            <span>Woodstock, ON</span>
+                            <span>2006 – 2007</span>
+                        </p>
+                        • Took customer orders and provided cash, debit and credit card services<br>
+                        • Received customers orders and recommended available promotions<br>
+                        • Cooked food on the grill while following safe food handling procedures<br>
+                        • Cleaned and maintained equipment ensuring safety<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; Copyright 2026. Contact <a href="mailto:brandonmwilks@gmail.com">me</a></p>
+        </footer>
+	</body>
+</html>
