@@ -285,6 +285,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
     padding-left: 10%;
+    height:75%;
   }
   .resume-float{
     display: flex;
