@@ -181,6 +181,10 @@
   gap: 10%;
   width: 95%;
 }
+ .pair-items{
+  display: flex;
+  justify-content: space-between;
+ }
 
 .float-item{
   display: block;
@@ -285,15 +289,19 @@ footer{
     display: flex;
     flex-wrap: wrap;
     padding-left: 10%;
-    height:75%;
   }
   .resume-float{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     gap: 10px;
     padding-left: 10%;
     height: 46vh;
+  }
+  .pair-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
   .tiny-img {
     height: 20%;
