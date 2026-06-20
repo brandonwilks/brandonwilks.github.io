@@ -283,7 +283,7 @@ footer{
     padding: 1%;
     box-sizing: border-box;
     margin-bottom: 1vh;
-    max-height: fit-content;
+    max-height: 100%;
   }
   .about-float{
     display: flex;
@@ -323,7 +323,7 @@ footer{
 @media (max-width: 768px) {
 
   .main-container {
-    max-height: fit-content;
+    max-height:100% 
   }
 
   .about-float{
