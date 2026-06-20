@@ -276,7 +276,6 @@ footer{
   .main-container {
     display: flex;
     flex-direction: column;
-    height: 96vh;
     padding: 1%;
     box-sizing: border-box;
     margin-bottom: 1vh;
@@ -286,6 +285,7 @@ footer{
     flex-wrap: wrap;
     gap: 10px;
     padding-left: 10%;
+    height:40%;
   }
   .resume-float{
     display: flex;
