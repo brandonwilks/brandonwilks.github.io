@@ -107,33 +107,29 @@
   }
   
 
-body {
-    height: 100%;
-    max-height: 100%;
-    overflow: hidden; /* Prevents scrolling if content overflows */
-    margin: 0;
+  body {
     font-family: 'Tomorrow', sans-serif;
     font-weight: 400;
     background-color: black;
-}
+  }
 
-.floating-container {
-    display: flex;
-    flex-direction: column;
-    height: 96vh;
-    padding: 1%;
-    box-sizing: border-box;
-    background-image: url('images/nightsky.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border: 2px solid white;
-    margin: 0 auto;
-    color: white;
-    text-shadow: 2px 2px 5px black;
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: 96vh;
+  padding: 1%;
+  box-sizing: border-box;
+  background-image: url('images/nightsky.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid white;
+  margin: 0 auto;
+  color: white;
+  text-shadow: 2px 2px 5px black;
 }
-.floating-container.light-mode {
+.main-container.light-mode {
   background-image: url('images/MornSkyClipped.png');
   background-size: cover;
   background-position: center;
@@ -163,33 +159,33 @@ body {
 }
 
 .float-right{
-    font-size: clamp(10px, 2vw, 20px);
-    position: fixed;
-    right: 5%;
-    bottom: 10%;
+  font-size: clamp(10px, 2vw, 20px);
+  position: fixed;
+  right: 5%;
+  bottom: 10%;
 }
 
 
 .about-float{
-    padding-top:5%;
-    display: flex;
-    flex-direction: row;
-    padding-left: 10%;
+  padding-top:5%;
+  display: flex;
+  flex-direction: row;
+  padding-left: 10%;
 }
 .resume-float{
-    padding-top:5%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-self: center;
-    gap: 10%;
-    width: 95%;
+  padding-top:5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-self: center;
+  gap: 10%;
+  width: 95%;
 }
 
 .float-item{
-    display: block;
-    flex-direction: column;
-    text-align: left;
+  display: block;
+  flex-direction: column;
+  text-align: left;
 }
 
 .resized-img {
@@ -201,50 +197,50 @@ body {
 }
 
 ul{
-    font-size: clamp(10px, 2vw, 20px);
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    margin-top: 5vh;
-    margin-bottom: 1vh;
-    justify-content: space-evenly;
-    align-items: left;
+  font-size: clamp(10px, 2vw, 20px);
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 5vh;
+  margin-bottom: 1vh;
+  justify-content: space-evenly;
+  align-items: left;
 }
 .gameList{
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 a{
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 header h1 {
-    font-size: clamp(25px, 5vw, 50px);
-    text-align: left;
-    margin: 0;
-    padding: 0;
+  font-size: clamp(25px, 5vw, 50px);
+  text-align: left;
+  margin: 0;
+  padding: 0;
 }
 
 header h5 {
-    font-size: clamp(5px, 1vw, 10px);
-    text-align: left;
-    margin: 0;
-    padding: 0;
-    padding-left: 2vh;
+  font-size: clamp(5px, 1vw, 10px);
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  padding-left: 2vh;
 }
 
 h1 {
-    font-size: clamp(15px, 3vw, 30px);
-    font-weight: 400;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  font-size: clamp(15px, 3vw, 30px);
+  font-weight: 400;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 h3 {
@@ -277,22 +273,31 @@ footer{
 
 @media (max-width: 425px) {
 
-  .floating-container {
+  .main-container {
     display: flex;
     flex-direction: column;
     height: 96vh;
     padding: 1%;
     box-sizing: border-box;
-    margin: 0px;
-    margin-bottom: 2vh;
+    margin-bottom: 1vh;
   }
   .about-float{
-    padding-top:5%;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 10px;
     padding-left: 10%;
-    align-items: left;
+  }
+  .resume-float{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+    padding-left: 10%;
+    height: 46vh;
+  }
+  .tiny-img {
+    height: 20%;
+    width: 20%
   }
 
   .float-item{
@@ -306,14 +311,25 @@ footer{
 @media (max-width: 768px) {
 
   .about-float{
+    display: flex;
     flex-wrap: wrap;
-    row-gap: 10px;
+    row-gap: 5%;
     padding: 0;
+    height:40%;
+    justify-content: center;
   }
   .float-item{
+    font-size: clamp(10px, 3vw, 20px);
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 20px;
     text-align: left;
+    height:40%;
+  }
+  .float-right{
+    font-size: clamp(10px, 2vw, 20px);
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
   }
 }
